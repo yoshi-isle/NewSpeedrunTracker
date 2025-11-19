@@ -20,5 +20,7 @@ func SetupRouter() *gin.Engine {
     r.PUT("/products/:id", controllers.UpdateProduct)
     r.DELETE("/products/:id", controllers.DeleteProduct)
 
+    r.POST("/category", controllers.CreateCategory)
+
     return r
 }

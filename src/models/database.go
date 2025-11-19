@@ -28,4 +28,7 @@ func ConnectDatabase() {
     }
 
     DB.AutoMigrate(&Product{})
+    DB.AutoMigrate(&Category{})
+    DB.AutoMigrate(&Submission{})
+    DB.AutoMigrate(&Activity{})
 }

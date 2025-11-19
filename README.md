@@ -16,3 +16,13 @@ The project includes a middleware that logs the IP address of incoming requests.
 ### License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+### Running DB locally sample
+
+docker run --name postgres-db -e POSTGRES_USER=user -e POSTGRES_PASSWORD=admin123 -e POSTGRES_DB=speedrundb -p 5432:5432 -d postgres
+
+DB_USER=user
+DB_PASSWORD=admin123
+DB_NAME=speedrundb
+DB_HOST=localhost
+DB_PORT=5432
