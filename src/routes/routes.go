@@ -13,14 +13,11 @@ func SetupRouter() *gin.Engine {
 	// Register the IPLogger middleware
     r.Use(middlewares.IPLogger())
 
-
-    r.GET("/products", controllers.FindProducts)
-    r.POST("/products", controllers.CreateProduct)
-    r.GET("/products/:id", controllers.FindProduct)
-    r.PUT("/products/:id", controllers.UpdateProduct)
-    r.DELETE("/products/:id", controllers.DeleteProduct)
-
+    r.GET("/category", controllers.FindCategories)
     r.POST("/category", controllers.CreateCategory)
+    r.GET("/category/:id", controllers.FindCategory)
+    r.PUT("/category", controllers.UpdateCategory)
+    r.DELETE("/category/:id", controllers.DeleteCategory)
 
     return r
 }

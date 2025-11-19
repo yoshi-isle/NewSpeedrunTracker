@@ -27,7 +27,6 @@ func ConnectDatabase() {
         panic("Failed to connect to database!")
     }
 
-    DB.AutoMigrate(&Product{})
     DB.AutoMigrate(&Category{})
     DB.AutoMigrate(&Submission{})
     DB.AutoMigrate(&Activity{})
