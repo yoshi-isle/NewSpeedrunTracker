@@ -1,0 +1,6 @@
+PUT http://localhost:8080/products/2
+
+{
+    "name": "Updated Product",
+    "price": 200
+}
