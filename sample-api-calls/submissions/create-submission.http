@@ -1,0 +1,8 @@
+POST http://localhost:8080/submission
+
+{
+    "activity_id": 1,
+    "score": 2398,
+    "submitters": "<@123123>, <@456456>",
+    "imgur_url": "imgur.com"
+}

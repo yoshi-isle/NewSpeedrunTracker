@@ -23,6 +23,15 @@ func SetupRouter() *gin.Engine {
     r.POST("/activity", controllers.CreateActivity)
     r.GET("/activity/:id", controllers.FindActivity)
     r.DELETE("/activity/:id", controllers.DeleteActivity)
+    
+    r.GET("/submission/pending", controllers.FindPendingSubmissions)
+    r.GET("/submission/approved", controllers.FindApprovedSubmissions)
+    r.GET("/submission/:id", controllers.FindPendingSubmission)
+    r.POST("/submission", controllers.CreateSubmission)
+    r.PUT("/submission/:id", controllers.UpdateSubmission)
+    r.PUT("/submission/inactive/:id", controllers.SetSubmissionInactive)
+    r.PUT("/submission/:id/:status", controllers.UpdateSubmissionStatus)
+
 
     return r
 }

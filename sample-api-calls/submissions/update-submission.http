@@ -1,0 +1,8 @@
+PUT http://localhost:8080/submission/5
+
+{
+    "activity_id": 1,
+    "score": 888,
+    "submitters": "<@123123>, <@456456>",
+    "imgur_url": "notimgur.com"
+}
