@@ -1,0 +1,6 @@
+POST http://localhost:8080/activity
+
+{
+    "category_id": 1,
+    "name": "Theatre of Blood - Normal Mode (Trio)"
+}
